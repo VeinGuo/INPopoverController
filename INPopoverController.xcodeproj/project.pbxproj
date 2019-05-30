@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33970076229FBD6500B696A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33970075229FBD6500B696A3 /* QuartzCore.framework */; };
+		33970077229FBD7200B696A3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BA893A143EA04A006F744E /* Cocoa.framework */; };
 		7619A0908F1873F212A86D92 /* INPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7619A090EED3A0874FFB0542 /* INPopoverController.m */; };
 		7619A507692D41F9A4EA0EB1 /* INPopoverController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7619AF3F1F908EC06616FBBA /* INPopoverController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7619A5078560AD04EB09398F /* INPopoverWindowFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7619AFDD9CA28B629C79B9B7 /* INPopoverWindowFrame.m */; };
@@ -16,12 +18,11 @@
 		7619A7C39101BC5170F2CF23 /* INPopoverWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 7619AEB4110920D49EB68147 /* INPopoverWindow.h */; };
 		7619AFCF3AC75534C6582B37 /* INPopoverWindowFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 7619ABC89C19022487731625 /* INPopoverWindowFrame.h */; };
 		7619AFCFD4611DEE23332859 /* INPopoverWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7619A46EB85527945376718B /* INPopoverWindow.m */; };
-		98BA893B143EA04A006F744E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BA893A143EA04A006F744E /* Cocoa.framework */; };
-		98BA8983143EA1E9006F744E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BA8982143EA1E9006F744E /* QuartzCore.framework */; };
 		98BA8985143EA28E006F744E /* INPopoverPrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 98BA8984143EA28E006F744E /* INPopoverPrefixHeader.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33970075229FBD6500B696A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7619A090EED3A0874FFB0542 /* INPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INPopoverController.m; sourceTree = "<group>"; };
 		7619A3274F11C96F76F9A2AA /* INPopoverParentWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INPopoverParentWindow.h; sourceTree = "<group>"; };
 		7619A46EB85527945376718B /* INPopoverWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INPopoverWindow.m; sourceTree = "<group>"; };
@@ -46,8 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98BA893B143EA04A006F744E /* Cocoa.framework in Frameworks */,
-				98BA8983143EA1E9006F744E /* QuartzCore.framework in Frameworks */,
+				33970077229FBD7200B696A3 /* Cocoa.framework in Frameworks */,
+				33970076229FBD6500B696A3 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				98BA8982143EA1E9006F744E /* QuartzCore.framework */,
+				33970075229FBD6500B696A3 /* QuartzCore.framework */,
 				98BA893A143EA04A006F744E /* Cocoa.framework */,
 				98BA893C143EA04A006F744E /* Other Frameworks */,
 			);
@@ -160,14 +162,15 @@
 		98BA892D143EA049006F744E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 1020;
 			};
 			buildConfigurationList = 98BA8930143EA049006F744E /* Build configuration list for PBXProject "INPopoverController" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 98BA892B143EA049006F744E;
 			productRefGroup = 98BA8938143EA04A006F744E /* Products */;
@@ -208,17 +211,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -243,17 +261,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
@@ -274,10 +306,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(DEVELOPER_DIR)/SDKs/MacOSX10.6.sdk/System/Library/Frameworks\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = INPopoverController/INPopoverPrefixHeader.pch;
@@ -285,6 +314,8 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				INFOPLIST_FILE = "INPopoverController/INPopoverController-Info.plist";
 				INSTALL_PATH = "@rpath";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.indragie.INPopoverController.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
@@ -298,10 +329,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(DEVELOPER_DIR)/SDKs/MacOSX10.6.sdk/System/Library/Frameworks\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = INPopoverController/INPopoverPrefixHeader.pch;
@@ -309,6 +337,8 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				INFOPLIST_FILE = "INPopoverController/INPopoverController-Info.plist";
 				INSTALL_PATH = "@rpath";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.indragie.INPopoverController.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;

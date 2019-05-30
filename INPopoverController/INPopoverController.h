@@ -34,6 +34,9 @@
 /** The size of the popover arrow. Default value: {23, 12}. Changes to this value are not animated. **/
 @property (nonatomic, assign) NSSize arrowSize;
 
+/** The offset of the popover offset. Default value: 0. Changes to this value are not animated. **/
+@property (nonatomic, assign) CGFloat arrowOffset;
+
 /** The current arrow direction of the popover. If the popover has never been displayed, then this will return INPopoverArrowDirectionUndefined */
 @property (nonatomic, assign, readonly) INPopoverArrowDirection arrowDirection;
 
@@ -53,7 +56,7 @@
 @property (nonatomic, assign) BOOL animates;
 
 /* If `animates` is `YES`, this is the animation type to use when showing/closing the popover.
-   Default value: `INPopoverAnimationTypePop` **/
+ Default value: `INPopoverAnimationTypePop` **/
 @property (nonatomic, assign) INPopoverAnimationType animationType;
 
 /** The content view controller from which content is displayed in the popover **/
@@ -87,12 +90,12 @@
 
 - (void)presentPopoverFromRect:(NSRect)rect inView:(NSView *)positionView preferredArrowDirection:(INPopoverArrowDirection)direction anchorsToPositionView:(BOOL)anchors;
 
-/** 
+/**
  Recalculates the best arrow direction for the current window position and resets the arrow direction. The change will not be animated. **/
 - (void)recalculateAndResetArrowDirection;
 
 /**
- Closes the popover unless NO is returned for the -popoverShouldClose: delegate method 
+ Closes the popover unless NO is returned for the -popoverShouldClose: delegate method
  @param sender the object that sent this message
  */
 - (IBAction)closePopover:(id)sender;
@@ -116,32 +119,32 @@
 @optional
 /**
  When the -closePopover: method is invoked, this method is called to give a change for the delegate to prevent it from closing. Returning NO for this delegate method will prevent the popover being closed. This delegate method does not apply to the -forceClosePopover: method, which will close the popover regardless of what the delegate returns.
- @param popover the @class INPopoverController object that is controlling the popover
+ @param popover the class INPopoverController object that is controlling the popover
  @returns whether the popover should close or not
  */
 - (BOOL)popoverShouldClose:(INPopoverController *)popover;
 
 /**
  Invoked right before the popover shows on screen
- @param popover the @class INPopoverController object that is controlling the popover
+ @param popover the class INPopoverController object that is controlling the popover
  */
 - (void)popoverWillShow:(INPopoverController *)popover;
 
 /**
  Invoked right after the popover shows on screen
- @param popover the @class INPopoverController object that is controlling the popover
+ @param popover the class INPopoverController object that is controlling the popover
  */
 - (void)popoverDidShow:(INPopoverController *)popover;
 
 /**
  Invoked right before the popover closes
- @param popover the @class INPopoverController object that is controlling the popover
+ @param popover the class INPopoverController object that is controlling the popover
  */
 - (void)popoverWillClose:(INPopoverController *)popover;
 
 /**
  Invoked right after the popover closes
- @param popover the @class INPopoverController object that is controlling the popover
+ @param popover the class INPopoverController object that is controlling the popover
  */
 - (void)popoverDidClose:(INPopoverController *)popover;
 @end

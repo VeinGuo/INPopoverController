@@ -6,7 +6,7 @@
 #import <AppKit/AppKit.h>
 #import "INPopoverControllerDefines.h"
 
-/** 
+/**
  @class INPopoverWindow
  An NSWindow subclass used to draw a custom window frame (@class INPopoverWindowFrame)
  **/
