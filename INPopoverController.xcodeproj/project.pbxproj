@@ -318,6 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.indragie.INPopoverController.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -341,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.indragie.INPopoverController.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
